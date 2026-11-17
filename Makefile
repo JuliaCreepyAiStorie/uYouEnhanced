@@ -6,7 +6,7 @@ export TARGET = iphone:clang:$(SDK_VERSION):15.0
 export SDK_PATH = $(THEOS)/sdks/iPhoneOS$(SDK_VERSION).sdk/
 export SYSROOT = $(SDK_PATH)
 export ARCHS = arm64
-
+export ADDITIONAL_CFLAGS = -fno-modules
 TWEAK_NAME ?= uYouEnhanced
 DISPLAY_NAME ?= YouTube
 BUNDLE_ID ?= com.google.ios.youtube
